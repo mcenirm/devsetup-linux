@@ -7,6 +7,7 @@ set -x
 [ -d ~/.linuxbrew ] \
     || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/linuxbrew/go/install)"
 source profile_additions_linuxbrew.bash
+brew install gcc
 brew install git
 brew doctor
 grep -q '^# Profile additions for linuxbrew$' ~/.bash_profile \
